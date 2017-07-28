@@ -12,10 +12,12 @@
 html {
 	font-family: sans-serif;
 	-ms-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%
+	-webkit-text-size-adjust: 100%;
+	padding-top: 0px;
 }
 body {
-	margin: 0
+	margin: 0;
+	padding-top: 0px;
 }
 article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
 	display: block
@@ -156,6 +158,42 @@ table {
 td, th {
 	padding: 0
 }/*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
+.img-container {
+	border: thin solid #C4C4C4;
+	border-radius: 10px;
+	overflow: hidden;
+	margin-left: auto;
+	margin-right: auto;
+	height: auto;
+	width: auto;
+}
+.img-200-200 {
+	width: 200px;
+	height: 200px;
+}
+.img-400-400 {
+	width: 400px;
+	height: 400px;
+}
+section {
+	padding-top: 60px;
+}
+.no-padding-or-margins {
+	margin: 0px;
+	padding: 0px;
+}
+.no-pic {
+	display: table-cell;
+	vertical-align: middle;
+
+
+}
+
+
+
+
+
+
 
 @media print {
 *, *:before, *:after {
@@ -1030,15 +1068,17 @@ h2, h3 {
 	box-sizing: border-box
 }
 html {
-	font-size: 10px;
-	-webkit-tap-highlight-color: rgba(0,0,0,0)
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	padding-top: 0px;
+	font-size: 14px;
 }
 body {
 	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 15px;
-	line-height: 1.42857143;
+	/* [disabled]font-size: 15px; */
+	/* [disabled]line-height: 1.42857143; */
 	color: #ffffff;
-	background-color: #222222
+	background-color: #222222;
+	padding-top: 0px;
 }
 input, button, select, textarea {
 	font-family: inherit;
@@ -3568,7 +3608,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 .navbar {
 	position: relative;
 	min-height: 60px;
-	margin-bottom: 21px;
+/*	margin-bottom: 21px;*/
 	border: 1px solid transparent
 }
 
@@ -3611,7 +3651,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 }
 .navbar-collapse.in {
 	overflow-y: visible
-}
+s}
 .navbar-fixed-top .navbar-collapse, .navbar-static-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
 	padding-left: 0;
 	padding-right: 0
@@ -3625,6 +3665,7 @@ textarea.input-group-sm>.form-control, textarea.input-group-sm>.input-group-addo
 .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
 	max-height: 200px
 }
+
 }
 .container>.navbar-header, .container-fluid>.navbar-header, .container>.navbar-collapse, .container-fluid>.navbar-collapse {
 	margin-right: -15px;
@@ -4278,7 +4319,7 @@ a.badge:hover, a.badge:focus {
 	margin-left: 3px
 }
 .jumbotron {
-/*
+	/*
 	padding-top: 30px;
 	padding-bottom: 30px;
 	margin-bottom: 30px;
@@ -4286,6 +4327,8 @@ a.badge:hover, a.badge:focus {
 	color: inherit;
 	background-color: #303030;
 	height: 100vh;
+	margin-top: -11px;
+	padding-top: 50px;
 }
 .jumbotron h1, .jumbotron .h1 {
 	color: inherit
@@ -4309,8 +4352,8 @@ a.badge:hover, a.badge:focus {
 
 @media screen and (min-width:768px) {
 .jumbotron {
-	padding-top: 48px;
-	padding-bottom: 48px
+/*	padding-top: 48px;*/
+/*	padding-bottom: 48px*/
 }
 .container .jumbotron, .container-fluid .jumbotron {
 	padding-left: 60px;
@@ -5095,7 +5138,7 @@ button.close {
 }
 .modal-body {
 	position: relative;
-	padding: 20px
+	padding: 20px;
 }
 .modal-footer {
 	padding: 20px;
